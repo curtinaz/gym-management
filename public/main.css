@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root{
+    --color-purple: #7159c1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-purple);
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Estilização dos links do menu */
+
+.links {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.links a + a {
+    margin-left: 32px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #777;
+    position: relative;
+}
+
+.links a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-purple);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: width 200ms;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 500ms cubic-bezier(1, 0.05, 0.47, 0.59);
+}
+
+.links a.active {
+    font-weight: bold;
+    color: var(--color-purple);
+
+}
+
+/* CARDS */
+
+.card{
+    /*estilo*/
+    background-color: white;
+    width: 800px;
+    height: 400px;
+
+    /*espacamento ao centro*/
+    margin: 45px auto;
+
+    /*grid 2fractions*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /*sombra*/
+    box-shadow: 6px 6px 5px -2px rgba(0, 0, 0, 0.2);
+
+    /*animação*/
+    opacity: 0;
+    animation-delay: 500ms;
+    animation-name: surgir;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes surgir {
+    0% {
+
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
