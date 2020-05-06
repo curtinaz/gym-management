@@ -68,7 +68,7 @@ header {
     /*estilo*/
     background-color: white;
     width: 800px;
-    height: 400px;
+    min-height: 400px;
 
     /*espacamento ao centro*/
     margin: 45px auto;
@@ -96,4 +96,29 @@ header {
     100% {
         opacity: 1;
     }
+}
+
+/* Details */
+
+.details {
+    padding: 36px;
+}
+
+.details .item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+}
+
+.details .item:last-child {
+    border: none;
+}
+
+.details .item div:nth-child(1) {
+    font-size: 12px;
+    line-height: 24px;
+    color: #aaa;
+}
+
+.details .item div:nth-child(2) {
+    font-weight: bold;
 }
