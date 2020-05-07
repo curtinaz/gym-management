@@ -3,9 +3,8 @@
     "version": "1.0.0",
     "main": "app.js",
     "scripts": {
-        "start": "npm-run-all -p nodemon browsersync",
-        "nodemon": "nodemon app.js",
-        "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,views'"
+        "start": "npm-run-all -p nodemon",
+        "nodemon": "nodemon app.js"
     },
     "dependencies": {
         "express": "^4.17.1",
