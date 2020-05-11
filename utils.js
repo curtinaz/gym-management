@@ -11,20 +11,13 @@ module.exports = {
         }
         return age
     },
-    date: function(timestamp) {
-        const date = new Date(timestamp)
+    date: function(data) {
+        const date = new Date(data)
 
-        // ano yyyy
         const year = date.getUTCFullYear()
+        const month = `0${date.getUTCMonth() + 1}`.slice(-2)
+        const day = `0${date.getUTCDate()}`.slice(-2)
 
-        // mes mm
-        const month = date.getUTCMonth() + 1
-
-        // dias dd
-        const day = date.getUTCDate()
-
-        // return yyyy-mm-dd
-
-        console.log (`${year}-${month}-${day}`)
+        return `${year}-${month}-${day}`
     }
 }
