@@ -58,3 +58,24 @@ exports.post = function (req, res) {
     })
 
 }
+
+// edit
+exports.edit = function(req, res) {
+
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.find(function(instructor) {
+        return id == instructor.id
+    })
+
+    if (!foundInstructor) return res.send ("Instructor not found!")
+
+    const instructor = {
+        ...foundInstructor,
+        birth: new Intl.DateTimeFormat("en-US").format(foundInstructor.birth),
+    }
+
+    console.log('instructor.birth')
+
+    return res.render("instructors/edit", {instructor: foundInstructor})
+}

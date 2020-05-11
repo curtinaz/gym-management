@@ -7,13 +7,11 @@
 
         <section class="details">
 
-            <h3>Novo Instrutor</h3>
+            <h3>Editar Instrutor{{ "a" if (instructor.gender == "F") else ""}} {{instructor.name}}</h3>
 
             {% include 'instructors/fields.njk' %}
 
         </section>
-        
-
     </form>
 
 {% endblock content %}
