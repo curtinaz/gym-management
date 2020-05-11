@@ -15,13 +15,13 @@ module.exports = {
         const date = new Date(timestamp)
 
         // ano yyyy
-        const year = date.getFullYear()
+        const year = date.getUTCFullYear()
 
         // mes mm
-        const month = date.getMonth() + 1
+        const month = date.getUTCMonth() + 1
 
         // dias dd
-        const day = date.getDate()
+        const day = date.getUTCDate()
 
         // return yyyy-mm-dd
 
