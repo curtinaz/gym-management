@@ -61,7 +61,7 @@ exports.post = function (req, res) {
 }
 
 // edit
-exports.edit = function(req, res) {
+exports.edit = function (req, res) {
 
     const { id } = req.params
 
@@ -77,4 +77,9 @@ exports.edit = function(req, res) {
     }
 
     return res.render("instructors/edit", { instructor, foundInstructor })
+}
+
+// put
+exports.put = function (req, res) {
+
 }
