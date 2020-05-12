@@ -3,6 +3,12 @@ const data = require('./data.json')
 const { age } = require('./utils.js')
 const { date, born } = require('./utils.js')
 
+//index
+
+exports.index = function (req, res) {
+    return res.render("instructors/index", { instructors: data.instructors })
+}
+
 // show
 
 exports.show = function (req, res) {
@@ -104,3 +110,4 @@ exports.put = function (req, res) {
         return res.redirect (`/instructors/${id}`)
     })
 }
+
