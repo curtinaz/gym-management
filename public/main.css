@@ -68,7 +68,7 @@ header {
 .card{
     /*estilo*/
     background-color: white;
-    width: 800px;
+    max-width: 800px;
     min-height: 400px;
 
     /*espacamento ao centro*/
