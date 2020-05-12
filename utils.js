@@ -19,5 +19,14 @@ module.exports = {
         const day = `0${date.getUTCDate()}`.slice(-2)
 
         return `${year}-${month}-${day}`
+    },
+    born: function(data) {
+        const date = new Date(data)
+
+        const year = date.getFullYear()
+        const month = `0${date.getMonth() + 1}`.slice(-2)
+        const day = `0${date.getDate()}`.slice(-2)
+
+        return `${day}/${month}/${year}`
     }
 }

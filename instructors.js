@@ -1,7 +1,7 @@
 const fs = require('fs')
 const data = require('./data.json')
 const { age } = require('./utils.js')
-const { date } = require('./utils.js')
+const { date, born } = require('./utils.js')
 
 // show
 
@@ -19,7 +19,7 @@ exports.show = function (req, res) {
         ...foundInstructor,
         age: age(foundInstructor.birth),
         services: foundInstructor.services.split(","),
-        created_at: new Intl.DateTimeFormat("pt-BR").format(foundInstructor.created_at),
+        created_at: born(foundInstructor.created_at),
     }
 
     return res.render('./instructors/show', { instructor })
@@ -55,7 +55,7 @@ exports.post = function (req, res) {
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
     if (err) return res.send("Write File error!")
 
-    return res.redirect("/instructors")
+    return res.redirect(`/instructors/`)
     })
 
 }
