@@ -88,10 +88,15 @@ exports.edit = function (req, res) {
 // put
 exports.put = function (req, res) {
 
+    let index = 0
+
     const { id } = req.body
 
-    const foundInstructor = data.instructors.find(function(instructor) {
-        return id == instructor.id
+    const foundInstructor = data.instructors.find(function(instructor, foundIndex) {
+        if (id == instructor.id) {
+            index = foundIndex
+            return true
+        }
     })
 
     if (!foundInstructor) return res.send ("Instructor not found!")
@@ -99,10 +104,11 @@ exports.put = function (req, res) {
     const instructor = {
         ...foundInstructor,
         ...req.body,
-        birth: Date.parse(req.body.birth)
+        birth: Date.parse(req.body.birth),
+        id: Number(req.body.id)
     }
 
-    data.instructors[id -1] = instructor
+    data.instructors[index] = instructor
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
         if (err) return res.send ("Write error!")
@@ -111,3 +117,9 @@ exports.put = function (req, res) {
     })
 }
 
+// delete
+
+exports.delete = function (req, res) {
+
+    return res.redirect (`/instructors/`)
+}

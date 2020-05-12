@@ -37,9 +37,9 @@
       "created_at": 1588997742998
     },
     {
-      "id": "5",
+      "id": 5,
       "avatar_url": "https://wallpaperaccess.com/full/2576091.jpg",
-      "name": "Teste Redirects",
+      "name": "Teste Redirect",
       "gender": "M",
       "services": "Teste do redirecionamento",
       "birth": 1008892800000,
