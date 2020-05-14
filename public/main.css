@@ -251,10 +251,11 @@ tbody tr td a:hover {
 
 .button__new {
     margin-bottom: 16px;
-    display: inline-block;
+    display: block;
     box-shadow: none;
     position: relative;
-    
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 .button__new:hover {

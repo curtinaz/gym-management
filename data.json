@@ -1,4 +1,7 @@
-{ "members": [],
+{
+  "members": [
+    {}
+  ],
   "instructors": [
     {
       "id": 1,
@@ -53,6 +56,24 @@
       "services": "Teste do redirecionamento",
       "birth": 1008892800000,
       "created_at": 1589250863310
+    },
+    {
+      "id": 7,
+      "avatar_url": "https://wallpaperaccess.com/full/2576091.jpg",
+      "name": "Cristian Curtinaz",
+      "gender": "M",
+      "services": "Musculação",
+      "birth": 891907200000,
+      "created_at": 1589424736489
+    },
+    {
+      "id": 8,
+      "avatar_url": "https://wallpaperaccess.com/full/2576091.jpg",
+      "name": "Cristian Curtinaz",
+      "gender": "M",
+      "services": "Musculação",
+      "birth": 891907200000,
+      "created_at": 1589424828904
     }
   ]
 }
