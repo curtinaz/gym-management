@@ -1,88 +1,13 @@
 {
   "members": [
-    {},
-    {
-      "id": 2,
-      "avatar_url": "https://wallpaperaccess.com/full/2576091.jpg",
-      "name": "Teste",
-      "gender": "M",
-      "services": "astra,try,fuolls",
-      "birth": 891907200000,
-      "created_at": 1589425766712
-    }
-  ],
-  "instructors": [
     {
       "id": 1,
-      "avatar_url": "http://google.com",
-      "name": "Vidente TFT",
-      "gender": "M",
-      "services": "astra,try,fuolls",
-      "birth": 11080108800000,
-      "created_at": 1588989806815
-    },
-    {
-      "id": 2,
-      "avatar_url": "http://google.com",
-      "name": "cris",
-      "gender": "M",
-      "services": "astra,try,fuolls",
-      "birth": -23282899200000,
-      "created_at": 1588990673651
-    },
-    {
-      "id": 3,
-      "avatar_url": "https://wallpaperaccess.com/full/2576091.jpg",
-      "name": "teste",
-      "gender": "M",
-      "services": "astra,try,fuolls",
-      "birth": 4802716800000,
-      "created_at": 1588991392549
-    },
-    {
-      "id": 4,
-      "avatar_url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2248ca48-981b-4b18-9b70-fb571221fae3/ddubcqi-f3e9f975-688c-45dc-9a4b-d102a777c5ba.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIyNDhjYTQ4LTk4MWItNGIxOC05YjcwLWZiNTcxMjIxZmFlM1wvZGR1YmNxaS1mM2U5Zjk3NS02ODhjLTQ1ZGMtOWE0Yi1kMTAyYTc3N2M1YmEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wWn7eJt8ael8lTE61fr2rprHIwRBbXF0B5bLeTG1KXM",
-      "name": "Laura",
-      "gender": "F",
-      "services": "Pagodeira, Fumante, Bióloga Marinha",
-      "birth": 934156800000,
-      "created_at": 1588997742998
-    },
-    {
-      "id": 5,
-      "avatar_url": "https://wallpaperaccess.com/full/2576091.jpg",
-      "name": "Teste Redirect",
-      "gender": "M",
-      "services": "Teste do redirecionamento",
-      "birth": 1008892800000,
-      "created_at": 1589250833551
-    },
-    {
-      "id": 6,
-      "avatar_url": "https://wallpaperaccess.com/full/2576091.jpg",
-      "name": "Teste Redirect",
-      "gender": "M",
-      "services": "Teste do redirecionamento",
-      "birth": 1008892800000,
-      "created_at": 1589250863310
-    },
-    {
-      "id": 7,
       "avatar_url": "https://wallpaperaccess.com/full/2576091.jpg",
       "name": "Cristian Curtinaz",
       "gender": "M",
-      "services": "Musculação",
       "birth": 891907200000,
-      "created_at": 1589424736489
-    },
-    {
-      "id": 8,
-      "avatar_url": "https://wallpaperaccess.com/full/2576091.jpg",
-      "name": "Cristian Curtinaz",
-      "gender": "M",
-      "services": "Musculação",
-      "birth": 891907200000,
-      "created_at": 1589424828904
+      "created_at": 1589427364894
     }
-  ]
+  ],
+  "instructors": []
 }
