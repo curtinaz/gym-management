@@ -233,7 +233,7 @@ tbody tr td:first-child span {
     border: 2px solid white;
 }
 
-tbody tr td a {
+tbody tr td a, .button__new {
     background-color: var(--color-orange);
     padding: 8px 16px;
     border-radius: 6px;
@@ -247,4 +247,16 @@ tbody tr td a {
 tbody tr td a:hover {
     background-color: orangered;
     transition: 400ms;
+}
+
+.button__new {
+    margin-bottom: 16px;
+    display: inline-block;
+    box-shadow: none;
+    position: relative;
+    
+}
+
+.button__new:hover {
+    background-color: orangered;
 }
