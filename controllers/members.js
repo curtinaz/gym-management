@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require('../data.json')
-const { date, born, age } = require('../utils.js')
+const { date, altura, age } = require('../utils.js')
 
 exports.index = function (req, res) {
     return res.render("members/index", { members: data.members })
@@ -23,6 +23,7 @@ exports.show = function (req, res) {
     const member = {
         ...foundMember,
         age: age(foundMember.birth),
+        height: altura(foundMember.height)
     }
 
     return res.render('./members/show', { member })
@@ -53,7 +54,7 @@ exports.post = function (req, res) {
         birth,
         blood,
         height,
-        weight,
+        weight
     }) // [{...},{...}]
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){

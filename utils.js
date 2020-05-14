@@ -28,5 +28,13 @@ module.exports = {
         const day = `0${date.getDate()}`.slice(-2)
 
         return `${day}/${month}/${year}`
+    },
+    altura: function(hei) {
+
+        const altura = new Number(hei)
+        const metro = `${altura}`.slice(0, 1)
+        const cm = `${altura}`.slice(-2)
+
+        return `${metro},${cm}m`
     }
 }

@@ -10,8 +10,13 @@
             <h3>Detalhes</h3>
 
             <div class="item">
-                <div>Instrutor</div>
+                <div>Membro</div>
                 <div>{{ member.name }}</div>
+            </div>
+
+            <div class="item">
+                <div>E-mail</div>
+                <div>{{ member.email }}</div>
             </div>
 
             <div class="item">
@@ -20,22 +25,27 @@
             </div>
 
             <div class="item">
-                <div>Sexo</div>
-                <div>{{ "Masculino" if member.gender == "M" else "Feminino" }}</div>
-            </div>
-
-            <div class="item">
-                <div>Acompanhamento</div>
+                <div>Tipo sanguineo</div>
                 <div>
-                    {% for member in member.services %} 
-                    <span>{{ member }}</span>
-                    {% endfor %}
+                {% if member.blood == "A1"%}A+{% endif %}
+                {% if member.blood == "A0"%}A-{% endif %}
+                {% if member.blood == "B1"%}B+{% endif %}
+                {% if member.blood == "B0"%}B-{% endif %}
+                {% if member.blood == "AB1"%}AB+{% endif %}
+                {% if member.blood == "AB0"%}AB-{% endif %}
+                {% if member.blood == "O1"%}O+{% endif %}
+                {% if member.blood == "O0"%}O-{% endif %}
                 </div>
             </div>
 
             <div class="item">
-                <div>Desde</div>
-                <div>{{ member.created_at }}</div>
+                <div>Peso</div>
+                <div>{{ member.weight }} Kg</div>
+            </div>
+
+            <div class="item">
+                <div>Altura</div>
+                <div>{{ member.height }}</div>
             </div>
 
             <a href="{{ member.id }}/edit/" class="button">Editar</a>
