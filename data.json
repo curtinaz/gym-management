@@ -1,6 +1,15 @@
 {
   "members": [
-    {}
+    {},
+    {
+      "id": 2,
+      "avatar_url": "https://wallpaperaccess.com/full/2576091.jpg",
+      "name": "Teste",
+      "gender": "M",
+      "services": "astra,try,fuolls",
+      "birth": 891907200000,
+      "created_at": 1589425766712
+    }
   ],
   "instructors": [
     {
