@@ -259,5 +259,5 @@ tbody tr td a:hover {
 }
 
 .button__new:hover {
-    background-color: orangered;
+    background-color: var(--color-purple);
 }

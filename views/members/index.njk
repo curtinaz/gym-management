@@ -7,8 +7,8 @@
         <table width="100%">
             <thead>
                 <tr>
-                    <th>Members</th>
-                    <th>Atendimento</th>
+                    <th>Membros</th>
+                    <th>Email</th>
                     <th>Ações</th>
                     <th></th>
                 </tr>
@@ -19,7 +19,7 @@
                 <tr>
                     <td><span style="background-image: url({{member.avatar_url}})"></span>
                     {{ member.name }}</td>
-                    <td>{{ member.services }}</td>
+                    <td>{{ member.email }}</td>
                     <td><a href="/members/{{member.id}}">ver</a></td>
                     <td><a href="/members/{{member.id}}/edit">editar</a></td>
                 </tr>
