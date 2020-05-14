@@ -1,0 +1,19 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <form class="card" method="POST" action="/instructors?_method=PUT">
+        <section class="avatar" style="width: 100%; min-height: 400px; background: url('{{ instructor.avatar_url }}') no-repeat center center / cover"></section>
+
+        <section class="details">
+
+            <h3>Editar Instrutor{{ "a" if (instructor.gender == "F") else ""}} {{instructor.name}}</h3>
+
+            {% include 'instructors/fields.njk' %}
+
+            <input type="hidden" name="id" value="{{ instructor.id }}">
+
+        </section>
+    </form>
+
+{% endblock content %}
