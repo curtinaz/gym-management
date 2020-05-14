@@ -17,7 +17,7 @@
             <tbody>
             {% for member in members %}
                 <tr>
-                    <td><span style="background-image: url({{instructor.avatar_url}})"></span>
+                    <td><span style="background-image: url({{member.avatar_url}})"></span>
                     {{ member.name }}</td>
                     <td>{{ member.services }}</td>
                     <td><a href="/members/{{member.id}}">ver</a></td>
