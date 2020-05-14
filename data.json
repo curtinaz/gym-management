@@ -2,11 +2,15 @@
   "members": [
     {
       "id": 1,
-      "avatar_url": "https://wallpaperaccess.com/full/2576091.jpg",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/63929112?s=460&u=844011cc4af2628ff2b3852b04551be5ea2b326f&v=4",
       "name": "Cristian Curtinaz",
       "gender": "M",
       "birth": 891907200000,
-      "created_at": 1589427364894
+      "created_at": 1589427364894,
+      "email": "brstreek@outlook.com",
+      "blood": "O0",
+      "weight": "65",
+      "height": "172"
     }
   ],
   "instructors": []
