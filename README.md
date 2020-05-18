@@ -1,4 +1,4 @@
-# academy-management
+# gym-management
 App para a manutenção de gerência de uma academia.
 
 # Projeto:
